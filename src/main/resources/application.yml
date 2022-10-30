@@ -1,0 +1,24 @@
+debug: false #디버그를 할거냐? 각종 로그백들을 볼 수 있는데 너무 많아서 false 체크하고 원하는 애들만 설정할거임
+management.endpoints.web.exposure.include: "*"
+
+logging:
+  level: # 구체적으로 로그 레벨들을 여기서 명시
+    com.example.demo1: debug #여기 애들을 디버그 레벨을 띄움
+    org.springframework.web.servlet: debug # springframework.web 애들 디버그
+    org.hibernate.type.descriptor.sql.BasicBinder: trace # jpa 사용할 때, 쿼리 로그를 디버그 로그로 사용가능
+
+spring:
+  datasource: # 데이터 베이스 접근
+    url: jdbc:mysql://localhost:3306/checkIn
+    username: checkIn
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    open-in-view: false
+    defer-datasource-initialization: true # 테스트용 데이터 베이스 데이터를 만들 수 있게 하기 위해 resource안에 쿼리를 짜서 넣을때
+    hibernate.ddl-auto: create # 자동으로 ddl 문 작성 (create, update 등등 )
+    show-sql: true
+    properties: #하이버네이트 관련 설정
+      hibernate.format_sql: true # 쿼리문을 예쁘게 format
+      hibernate.default_batch_fetch_size: 100 # ex) n+1 쿼리 문제 대응
+  sql.init.mode: always
