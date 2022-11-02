@@ -1,19 +1,33 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lagn="ko" xmlns:th="http://www.thymeleaf.org">
 
 <!-- 공통으로 쓰이는 script 파일을넣는다.-->
 <th:block th:fragment="scriptFragment">
 
+  <!--.... 스크립트 코드 작성-->
 
   <!-- Bootstrap core JavaScript-->
   <script th:src="@{/bootstrap/vendor/jquery/jquery.min.js}"></script>
   <script th:src="@{/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 
-  .... 스크립트 코드 작성
+
+
+  <!-- Core plugin JavaScript-->
+  <script th:src="@{bootstrap/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script th:src="@{bootstrap/js/sb-admin-2.min.js}"></script>
+
+  <!-- Page level plugins -->
+  <script th:src="@{bootstrap/vendor/chart.js/Chart.min.js}"></script>
 
   <!-- Page level custom scripts -->
-<!--  <script th:src="@{/bootstrap/js/demo/chart-area-demo.js}"></script>
-  <script th:src="@{/bootstrap/js/demo/chart-pie-demo.js}"></script>-->
+  <script th:src="@{bootstrap/js/demo/chart-area-demo.js}"></script>
+  <script th:src="@{bootstrap/js/demo/chart-pie-demo.js}"></script>
+
+  <!-- Page level custom scripts -->
+ <!--  <script th:src="@{/bootstrap/js/demo/chart-area-demo.js}"></script>
+   <script th:src="@{/bootstrap/js/demo/chart-pie-demo.js}"></script>-->
 
 </th:block>
 </html>
