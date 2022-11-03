@@ -1,4 +1,4 @@
-package com.teamproject.checkin.checkin.domain;
+package com.teamproject.checkin.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

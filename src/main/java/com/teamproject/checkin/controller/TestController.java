@@ -1,4 +1,4 @@
-package com.teamproject.checkin.checkin.controller;
+package com.teamproject.checkin.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

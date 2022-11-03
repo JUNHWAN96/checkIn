@@ -1,4 +1,4 @@
-package com.teamproject.checkin.checkin;
+package com.teamproject.checkin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

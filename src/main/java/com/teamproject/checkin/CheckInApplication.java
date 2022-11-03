@@ -1,4 +1,4 @@
-package com.teamproject.checkin.checkin;
+package com.teamproject.checkin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
