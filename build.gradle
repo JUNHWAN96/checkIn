@@ -31,6 +31,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-devtools' //추가해주면 서버 재시작하지않아도 html 변경됨(리컴파일은 해줘야함)
+	implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.6.12.Final'
+    
 }
 
 tasks.named('test') {
