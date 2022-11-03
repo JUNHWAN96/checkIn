@@ -1,4 +1,4 @@
-package com.teamproject.checkin.boardService;
+package com.teamproject.checkin.board;
 
 import lombok.Data;
 import java.io.Serializable;
