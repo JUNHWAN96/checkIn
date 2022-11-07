@@ -49,4 +49,10 @@ public class TestController {
     	model.addAttribute("data", "UI 화면 테스트");
     	return "table";
     }
+
+    @GetMapping("/table2")
+    public String table2(Model model) {
+        model.addAttribute("data", "UI 화면 테스트");
+        return "/table/table1234";
+    }
 }
