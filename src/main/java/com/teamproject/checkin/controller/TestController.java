@@ -43,4 +43,10 @@ public class TestController {
     	  model.addAttribute("data","타임리프 테스트");
           return "template";
     }
+    
+    @GetMapping("/table")
+    public String table(Model model) {
+    	model.addAttribute("data", "UI 화면 테스트");
+    	return "table";
+    }
 }
