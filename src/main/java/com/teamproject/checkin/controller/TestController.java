@@ -37,4 +37,10 @@ public class TestController {
         model.addAttribute("data","타임리프 테스트");
         return "hihi";
     }
+    
+    @GetMapping("/template")
+    public String template(Model model) {
+    	  model.addAttribute("data","타임리프 테스트");
+          return "template";
+    }
 }

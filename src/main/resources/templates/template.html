@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout002}">
+<th:block layout:fragment="content002">
+	<div class="app-content content">
+		<div class="content-wrapper">
+			<div class="content-wrapper-before"></div>
+			<div class="content-header row">
+				<div class="content-header-left col-md-4 col-12 mb-2">
+					<h3 class="content-header-title">Title</h3> <!-- Title 입력 -->
+				</div>
+				<div class="content-header-right col-md-8 col-12">
+					<div class="breadcrumbs-top float-md-right">
+						<div class="breadcrumb-wrapper mr-1">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li> <!-- Home LINK -->
+								<li class="breadcrumb-item active">Title</li> <!-- Title 입력 -->
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-body">
+				<!-- Bar charts section start -->
+				<section id="chartjs-bar-charts">
+					<!-- Column Chart -->
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Check In Test Main UI</h4> <!-- 부제목 입력 -->
+								</div>
+								<div class="card-content collapse show">
+									 <div class="card-body">
+			                            <div class="height-400"> <!-- 본문 입력 -->
+			                            	<a>체크인 프로젝트 테스트 화면</a>
+				                        </div>
+				                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</th:block>
+</html>
