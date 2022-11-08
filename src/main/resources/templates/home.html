@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout002}">
+<script th:src="@{/theme-assets/css/vendors.css}"></script>
+<script th:src="@{/theme-assets/css/app-lite.css}"></script>
+<script th:src="@{/theme-assets/css/core/menu/menu-types/vertical-menu.css}"></script>
+<script th:src="@{/theme-assets/css/core/colors/palette-gradient.css}"></script>
+<th:block layout:fragment="content002">
+	<div class="app-content content">
+		<div class="content-wrapper">
+			<div class="content-wrapper-before"></div>
+			<div class="content-header row">
+				<div class="content-header-left col-md-4 col-12 mb-2">
+					<h3 class="content-header-title">CheckIn Company<i class="la la-copyright"></i></h3> <!-- Title 입력 -->
+				</div>
+				<div class="content-header-right col-md-8 col-12">
+					<div class="breadcrumbs-top float-md-right">
+						<div class="breadcrumb-wrapper mr-1">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="/home">Home</a></li> <!-- Home LINK -->
+								<li class="breadcrumb-item active">홈</li> <!-- Title 입력 -->
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-body">
+				<section id="basic-buttons">
+				    <div class="row">
+				        <div class="col-lg-12 col-md-12">
+				            <div class="card">
+				                <div class="card-header">
+				                    <h4 class="card-title">프로젝트 기능 목록</h4>
+				                    <a class="heading-elements-toggle"><i class="la la-ellipsis font-medium-3"></i></a>
+				                    <div class="heading-elements">
+				                        <ul class="list-inline mb-0">
+				                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+				                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+				                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+				                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+				                        </ul>
+				                    </div>
+				                </div>
+				                <div class="card-content collapse show">
+				                    <div class="card-body">
+				                        <p class="card-subtitle"></p>
+				                        <p><i class="la la-check-square"></i> 회원가입 로그인</p>
+			                            <p><i class="la la-check-square"></i> 공지게시판</p>
+			                            <p><i class="la la-check-square"></i> 스케줄러</p>
+			                            <p><i class="la la-check-square"></i> 근태관리하기</p>
+			                            <p><i class="la la-check-square"></i> 또 뭐있더라</p>
+				                        
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</section>
+				<section id="basic-buttons">
+				    <div class="row">
+				        <div class="col-lg-12 col-md-12">
+				            <div class="card">
+				                <div class="card-header">
+				                    <h4 class="card-title">공지사항</h4>
+				                    <a class="heading-elements-toggle"><i class="la la-ellipsis font-medium-3"></i></a>
+				                    <div class="heading-elements">
+				                        <ul class="list-inline mb-0">
+				                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+				                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+				                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+				                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+				                        </ul>
+				                    </div>
+				                </div>
+				                <div class="card-content collapse show">
+				                    <div class="card-body">
+				                        <p class="card-subtitle"></p>
+				                        <p><i class="la la-check-circle"></i> 공지게시판에 새로운 글이 등록되었습니다.</p>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</section>
+				<section id="basic-buttons">
+				    <div class="row">
+				        <div class="col-lg-12 col-md-12">
+				            <div class="card">
+				                <div class="card-header">
+				                    <h4 class="card-title">부서게시판</h4>
+				                    <a class="heading-elements-toggle"><i class="la la-ellipsis font-medium-3"></i></a>
+				                    <div class="heading-elements">
+				                        <ul class="list-inline mb-0">
+				                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+				                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+				                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+				                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+				                        </ul>
+				                    </div>
+				                </div>
+				                <div class="card-content collapse show">
+				                    <div class="card-body">
+				                        <p class="card-subtitle"></p>
+				                        <p><i class="la la-check-circle"></i> 부서에 새로운 일정이 추가되었습니다.</p>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</section>
+				<section id="basic-buttons">
+				    <div class="row">
+				        <div class="col-lg-12 col-md-12">
+				            <div class="card">
+				                <div class="card-header">
+				                    <h4 class="card-title">section</h4>
+				                    <a class="heading-elements-toggle"><i class="la la-ellipsis font-medium-3"></i></a>
+				                    <div class="heading-elements">
+				                        <ul class="list-inline mb-0">
+				                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+				                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+				                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+				                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+				                        </ul>
+				                    </div>
+				                </div>
+				                <div class="card-content collapse show">
+				                    <div class="card-body">
+				                        <p class="card-subtitle"></p>
+				                        <p><i class="la la-check-circle"></i> 섹션부터 복사해서 쓰면 되여 !!!!</p>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</section>
+				<section id="basic-buttons">
+				    <div class="row">
+				        <div class="col-lg-12 col-md-12">
+				            <div class="card">
+				                <div class="card-header">
+				                    <h4 class="card-title">icon</h4>
+				                    <a class="heading-elements-toggle"><i class="la la-ellipsis font-medium-3"></i></a>
+				                    <div class="heading-elements">
+				                        <ul class="list-inline mb-0">
+				                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+				                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+				                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+				                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+				                        </ul>
+				                    </div>
+				                </div>
+				                <div class="card-content collapse show">
+				                    <div class="card-body">
+				                        <p class="card-subtitle"></p>
+				                        <p><i class="la la-birthday-cake"></i> la-birthday-cake 케이쿠 기엽쥬?</p>
+				                        <p><i class="la la-bookmark"></i> la-bookmark 북마커</p>
+				                        <p><i class="la la-calendar-check-o"></i> la-calendar-check-o 캘린더</p>
+				                        <p><i class="la la-camera"></i> la-camera 카메라</p>
+				                        <p><i class="la la-certificate"></i> la-certificate 뭔가 개근상 이런거 쓸거같아서 ㅋㅋ</p>
+				                        <p><i class="la la-comments"></i> la-comments 이런거 무족건 쓸듯</p>
+				                        <p><i class="la la-comment"></i> la-comment 이것두 222</p>
+				                        <p><i class="la la-dashboard"></i> la-dashboard</p>
+				                        <p><i class="la la-file-picture-o"></i> la-file-picture-o 이미지 파일</p>
+				                        <p><i class="la la-thumb-tack"></i> la-thumb-tack</p>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</section>										
+			</div>
+		</div>
+	</div>
+</th:block>
+</html>
