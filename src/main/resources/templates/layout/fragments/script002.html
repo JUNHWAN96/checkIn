@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lagn="ko" xmlns:th="http://www.thymeleaf.org">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 
 <!-- 공통으로 쓰이는 script 파일을넣는다.-->
 <th:block th:fragment="scriptFragment">
   <!--.... 스크립트 코드 작성-->
   <!-- BEGIN VENDOR JS-->
-    <script src="@{/theme-assets/vendors/js/vendors.min.js}"></script>
+    <script th:src="@{/theme-assets/vendors/js/vendors.min.js}"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="@{/theme-assets/vendors/js/charts/chartist.min.js}"></script>
+    <!-- <script th:src="@{/theme-assets/vendors/js/charts/chartist.min.js}"></script>  차트 사용 script-->
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN CHAMELEON  JS-->
-    <script src="@{/theme-assets/js/core/app-menu-lite.js}"></script>
-    <script src="@{/theme-assets/js/core/app-lite.js"></script>
+    <script th:src="@{/theme-assets/js/core/app-menu-lite.js}"></script>
+    <script th:src="@{/theme-assets/js/core/app-lite.js}"></script>
     <!-- END CHAMELEON  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="@{/theme-assets/js/scripts/pages/dashboard-lite.js}"></script>
+   <!--  <script th:src="@{/theme-assets/js/scripts/pages/dashboard-lite.js}"></script> 차트 사용 script-->
     <!-- END PAGE LEVEL JS-->
 </th:block>
 </html>
