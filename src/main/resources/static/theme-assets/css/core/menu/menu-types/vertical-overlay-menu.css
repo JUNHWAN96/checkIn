@@ -73,7 +73,7 @@
 }
 .vertical-overlay-menu .main-menu .navigation li.has-sub > a:not(.mm-next):after
 {
-    font-family: 'LineAwesome';
+    font-family: 'LineAwesome', 'NanumSquareNeoLight';
     font-size: .85rem;
 
     position: absolute;

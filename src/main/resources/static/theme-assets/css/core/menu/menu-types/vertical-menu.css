@@ -88,7 +88,7 @@ body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a
 }
 body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.has-sub > a:not(.mm-next):after
 {
-    font-family: 'LineAwesome';
+    font-family: 'LineAwesome', 'NanumSquareNeoLight';
     font-size: .85rem;
 
     position: absolute;
@@ -308,7 +308,7 @@ body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content 
 }
 body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > ul.menu-content li.has-sub > a:not(.mm-next):after
 {
-    font-family: 'LineAwesome';
+    font-family: 'LineAwesome', 'NanumSquareNeoLight';
     font-size: .85rem;
 
     position: absolute;
@@ -729,7 +729,7 @@ body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .footer
 }
 .vertical-overlay-menu .main-menu .navigation li.has-sub > a:not(.mm-next):after
 {
-    font-family: 'LineAwesome';
+    font-family: 'LineAwesome', 'NanumSquareNeoLight';
     font-size: .85rem;
 
     position: absolute;
