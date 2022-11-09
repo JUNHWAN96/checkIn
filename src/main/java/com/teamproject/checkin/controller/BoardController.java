@@ -17,5 +17,15 @@ public class BoardController {
     public String FRWrite(Model model){
         return "/board/FRWrite";
     }
+    
+    @GetMapping("/FRDetail")
+    public String FRDetail(Model model){
+        return "/board/FRDetail";
+    }
+    
+    @GetMapping("/FREdit")
+    public String FREdit(Model model){
+        return "/board/FREdit";
+    }
 
 }
