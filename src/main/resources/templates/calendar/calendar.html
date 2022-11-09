@@ -4,15 +4,9 @@
 	layout:decorate="~{layout/layout002}">
 <meta charset="utf-8">	
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/calendar/fonts/icomoon/style.css">
-<link href='/calendar/fullcalendar/packages/core/main.css' rel='stylesheet' />
-<link href='/calendar/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="/calendar/css/bootstrap.min.css">
-<!-- Style -->
-<link rel="stylesheet" href="/calendar/css/style.css">
+<!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">-->
+
 <th:block layout:fragment="content002">
 	<div class="app-content content">
 		<div class="content-wrapper">
@@ -62,7 +56,7 @@
 <script>
 	document.addEventListener('DOMContentLoaded', function() {
 		var calendarEl = document.getElementById('calendar');
-	
+
 		var calendar = new FullCalendar.Calendar(calendarEl, {
 		plugins: [ 'interaction', 'dayGrid' ],
 		defaultDate: '2020-02-12',
@@ -125,11 +119,11 @@
 		  }
 		]
 		});
-		
+
 		calendar.render();
 	});
 
 </script>
-<script th:src="@{/calendar/js/main.js}"></script>	
+<script th:src="@{/calendar/js/main.js}"></script>
 </th:block>
 </html>
