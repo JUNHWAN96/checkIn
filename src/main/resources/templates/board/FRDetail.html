@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout002}">
+<th:block layout:fragment="content002">
+	<div class="app-content content">
+		<div class="content-wrapper">
+			<div class="content-wrapper-before"></div>
+			<div class="content-header row">
+				<div class="content-header-left col-md-4 col-12 mb-2">
+					<h3 class="content-header-title">자유게시판</h3> <!-- Title 입력 -->
+				</div>
+				<div class="content-header-right col-md-8 col-12">
+					<div class="breadcrumbs-top float-md-right">
+						<div class="breadcrumb-wrapper mr-1">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="/home">Home</a></li> <!-- Home LINK -->
+								<li class="breadcrumb-item active">자유게시판 > 게시글</li> <!-- Title 입력 -->
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-body">
+				<section id="chartjs-bar-charts">
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">자유게시판 게시글 상세보기</h4> <!-- 부제목 입력 -->
+								</div>
+								<div class="card-content collapse show">
+				                    <div class="row">
+										<div class="col-12">
+											<div class="card">
+												<div class="card-header">
+													<h1 class="card-title"><a href="javascript:history.back()"><span class="pink"><i class="la la-mail-reply"></i>뒤로</span></a></h1>
+													<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+													<div class="heading-elements">
+														<ul class="list-inline mb-0">
+															<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="card-content collapse show">
+													<div class="card-body">
+														<div style="text-align: right;">
+															<button type="button" class="btn btn-icon btn-danger mr-1 btn-sm" id="btn_edit" onclick="location.href='/FREdit'">게시글수정하기</button>
+														</div>
+														<div class="card-text">
+									                          <h3 style="font-weight: bold; padding-bottom: 20px;">게시글 제목</h3>		
+									                        <dl class="row">
+									                            <dt class="col-sm-3">작성자</dt>
+									                            <dd class="col-sm-9">UX/UI팀 도라희</dd>
+									                        </dl>
+									                        <dl class="row">
+									                            <dt class="col-sm-3">작성일자</dt>
+									                            <dd class="col-sm-9">2022년 11월 09일 10:11:59</dd>
+									                        </dl>									                        
+									                        <dl class="row">
+									                            <dt class="col-sm-3 text-truncate">내용</dt>
+									                            <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+									                            					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+									                        </dl>
+									                    </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</th:block>
+</html>

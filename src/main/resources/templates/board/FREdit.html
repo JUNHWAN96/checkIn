@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout002}">
+<th:block layout:fragment="content002">
+<style>
+.tbx {
+		resize: none;
+}
+</style>
+	<div class="app-content content">
+		<div class="content-wrapper">
+			<div class="content-wrapper-before"></div>
+			<div class="content-header row">
+				<div class="content-header-left col-md-4 col-12 mb-2">
+					<h3 class="content-header-title">자유게시판</h3> <!-- Title 입력 -->
+				</div>
+				<div class="content-header-right col-md-8 col-12">
+					<div class="breadcrumbs-top float-md-right">
+						<div class="breadcrumb-wrapper mr-1">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="/home">Home</a></li> <!-- Home LINK -->
+								<li class="breadcrumb-item active">자유게시판 > 게시글수정</li> <!-- Title 입력 -->
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-body">
+				<section id="chartjs-bar-charts">
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">자유게시판 게시글수정</h4> <!-- 부제목 입력 -->
+								</div>
+								<div class="card-content collapse show">
+				                    <div class="row">
+										<div class="col-12">
+											<div class="card">
+												<div class="card-header">
+													<h1 class="card-title"><a href="javascript:history.back()"><span class="pink"><i class="la la-mail-reply"></i>뒤로</span></a></h1>
+													<a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+													<div class="heading-elements">
+														<ul class="list-inline mb-0">
+															<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="card-content collapse show">
+													<div class="card-body">
+													<form class="form">
+														<div class="form-body">
+															<input type="hidden" id="date" name="date">
+															<div class="form-group">
+																<input type="text" id="writer" class="form-control" value="UX/UI팀 도라희" name="writer" readonly="readonly">
+															</div>
+															<div class="form-group">
+																<input type="text" id="title" class="form-control" name="title" readonly="readonly" value="제목은 수정 불가능">
+															</div>
+															<div class="form-group">
+																<textarea id="content" rows="20" class="form-control tbx" name="content">내용만 수정이 가능하다다닫</textarea>
+															</div>
+														</div>
+														<div class="form-actions center">
+															<button type="submit" class="btn btn-outline-primary">수정하기</button>
+														</div>
+													</form>
+												</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</th:block>
+</html>
