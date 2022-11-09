@@ -45,7 +45,13 @@
 												<div class="card-content collapse show">
 													<div class="card-body">
 														<div style="text-align: right;">
-															<button type="button" class="btn btn-icon btn-danger mr-1 btn-sm" id="btn_edit" onclick="location.href='/FREdit'">게시글수정하기</button>
+														<div class="btn-group mr-1 mb-1">
+ 															<button type="button" class="btn btn-danger btn-sm btn-min-width dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">더보기</button>							                                
+ 															<div class="dropdown-menu">
+							                                    <a class="dropdown-item" href="/FREdit">수정하기</a>
+							                                    <a class="dropdown-item" onclick="">삭제</a><!-- 삭제권한 회사 직급별권한, 작성자 권한없는사람이 클릭시 권한이없습니다 메세지 출력 -->
+							                                </div>
+							                            </div>
 														</div>
 														<div class="card-text">
 									                          <h3 style="font-weight: bold; padding-bottom: 20px;">게시글 제목</h3>		
