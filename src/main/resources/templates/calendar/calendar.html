@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout002}">
+<meta charset="utf-8">	
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/calendar/fonts/icomoon/style.css">
+<link href='/calendar/fullcalendar/packages/core/main.css' rel='stylesheet' />
+<link href='/calendar/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="/calendar/css/bootstrap.min.css">
+<!-- Style -->
+<link rel="stylesheet" href="/calendar/css/style.css">
+<th:block layout:fragment="content002">
+	<div class="app-content content">
+		<div class="content-wrapper">
+			<div class="content-wrapper-before"></div>
+			<div class="content-header row">
+				<div class="content-header-left col-md-4 col-12 mb-2">
+					<h3 class="content-header-title">Calendar</h3> <!-- Title 입력 -->
+				</div>
+				<div class="content-header-right col-md-8 col-12">
+					<div class="breadcrumbs-top float-md-right">
+						<div class="breadcrumb-wrapper mr-1">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="/home">Home</a></li> <!-- Home LINK -->
+								<li class="breadcrumb-item active">calendar</li> <!-- Title 입력 -->
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-body">
+				<!-- Bar charts section start -->
+				<section id="chartjs-bar-charts">
+					<!-- Column Chart -->
+					<div class="row">
+						<div class="col-12">
+							<div class="card">								
+								<div class="card-content collapse show">
+									 <div class="card-body">
+									   <div class="content">
+									    <div id='calendar'></div>
+									  </div>
+				                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<script th:src="@{/calendar/js/jquery-3.3.1.min.js}"></script>
+<script th:src="@{/calendar/js/popper.min.js}"></script>
+<script th:src="@{/calendar/js/bootstrap.min.js}"></script>
+<script th:src='@{/calendar/fullcalendar/packages/core/main.js}'></script>
+<script th:src='@{/calendar/fullcalendar/packages/interaction/main.js}'></script>
+<script th:src='@{/calendar/fullcalendar/packages/daygrid/main.js}'></script>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var calendarEl = document.getElementById('calendar');
+	
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+		plugins: [ 'interaction', 'dayGrid' ],
+		defaultDate: '2020-02-12',
+		editable: true,
+		eventLimit: true, // allow "more" link when too many events
+		events: [
+		  {
+		    title: 'All Day Event',
+		    start: '2020-02-01'
+		  },
+		  {
+		    title: 'Long Event',
+		    start: '2020-02-07',
+		    end: '2020-02-10'
+		  },
+		  {
+		    groupId: 999,
+		    title: 'Repeating Event',
+		    start: '2020-02-09T16:00:00'
+		  },
+		  {
+		    groupId: 999,
+		    title: 'Repeating Event',
+		    start: '2020-02-16T16:00:00'
+		  },
+		  {
+		    title: 'Conference',
+		    start: '2020-02-11',
+		    end: '2020-02-13'
+		  },
+		  {
+		    title: 'Meeting',
+		    start: '2020-02-12T10:30:00',
+		    end: '2020-02-12T12:30:00'
+		  },
+		  {
+		    title: 'Lunch',
+		    start: '2020-02-12T12:00:00'
+		  },
+		  {
+		    title: 'Meeting',
+		    start: '2020-02-12T14:30:00'
+		  },
+		  {
+		    title: 'Happy Hour',
+		    start: '2020-02-12T17:30:00'
+		  },
+		  {
+		    title: 'Dinner',
+		    start: '2020-02-12T20:00:00'
+		  },
+		  {
+		    title: 'Birthday Party',
+		    start: '2020-02-13T07:00:00'
+		  },
+		  {
+		    title: 'Click for Google',
+		    url: 'http://google.com/',
+		    start: '2020-02-28'
+		  }
+		]
+		});
+		
+		calendar.render();
+	});
+
+</script>
+<script th:src="@{/calendar/js/main.js}"></script>	
+</th:block>
+</html>
