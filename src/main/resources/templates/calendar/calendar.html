@@ -6,8 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">-->
-
 <th:block layout:fragment="content002">
+<style>
+.cal {
+		margin-left: 0px;
+}
+</style>
 	<div class="app-content content">
 		<div class="content-wrapper">
 			<div class="content-wrapper-before"></div>
@@ -27,21 +31,9 @@
 				</div>
 			</div>
 			<div class="content-body">
-				<!-- Bar charts section start -->
-				<section id="chartjs-bar-charts">
-					<!-- Column Chart -->
-					<div class="row">
-						<div >
-							<div class="card">								
-								 <div class="card-body">
-								   <div class="content">
-								    <div id='calendar' style="text-align: center;"></div>
-								  </div>
-			                    </div>
-							</div>
-						</div>
-					</div>
-				</section>
+			 <div class="content cal">
+			    <div id='calendar'></div>
+			  </div>
 			</div>
 		</div>
 	</div>
