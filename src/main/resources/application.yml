@@ -8,6 +8,13 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: trace # jpa 사용할 때, 쿼리 로그를 디버그 로그로 사용가능
 
 spring:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+  thymeleaf:
+    cache: false
   datasource: # 데이터 베이스 접근
     url: jdbc:mysql://localhost:3306/checkIn
     username: checkIn

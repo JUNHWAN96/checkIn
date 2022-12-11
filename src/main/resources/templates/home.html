@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorate="~{layout/layout002}">
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.w3.org/1999/xhtml"
+	  layout:decorate="~{layout/layout002}">
 <script th:src="@{/theme-assets/css/vendors.css}"></script>
 <script th:src="@{/theme-assets/css/app-lite.css}"></script>
 <script th:src="@{/theme-assets/css/core/menu/menu-types/vertical-menu.css}"></script>
@@ -17,10 +17,12 @@
 				<div class="content-header-right col-md-8 col-12">
 					<div class="breadcrumbs-top float-md-right">
 						<div class="breadcrumb-wrapper mr-1">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="/home">Home</a></li> <!-- Home LINK -->
-								<li class="breadcrumb-item active">홈</li> <!-- Title 입력 -->
-							</ol>
+
+								<span sec:authorize="isAuthenticated()" sec:authentication="name">아이디</span>
+								<a href="/register" sec:authorize="!isAuthenticated()">회원가입</a>
+								<a href="/login" sec:authorize="!isAuthenticated()">로그인</a>
+								<a href="/logout" sec:authorize="isAuthenticated()">로그아웃</a>
+
 						</div>
 					</div>
 				</div>

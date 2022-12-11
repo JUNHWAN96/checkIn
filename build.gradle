@@ -21,7 +21,9 @@ repositories {
 dependencies {
     //thymeleaf
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5' // security 태그
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+    implementation 'org.springframework.boot:spring-boot-starter-security' // 스프링 시큐리티
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -30,6 +32,7 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
     implementation 'org.springframework.boot:spring-boot-devtools' //추가해주면 서버 재시작하지않아도 html 변경됨(리컴파일은 해줘야함)
 	implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.6.12.Final'
     
