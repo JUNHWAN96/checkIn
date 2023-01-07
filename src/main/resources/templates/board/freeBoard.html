@@ -76,35 +76,21 @@ html body a:hover {
 																</tr>
 															</thead>
 															<tbody>
-																<tr>
-																	<th scope="row">1</th>
-																	<td><a href="/FRDetail">게시글에 제목이 입력되는 곳</a></td>
-																	<td>김작성</td>
-																	<td class="small">2022-11-09 09:11:55</td>
-																</tr>
-																<tr>
-																	<th scope="row">2</th>
-																	<td>Board Title</td>
-																	<td>Otto</td>
-																	<td class="small">2022-11-09 09:01:15</td>
-																</tr>
-																<tr>
-																	<th scope="row">3</th>
-																	<td>Check IN 프로젝트 시작합니다...</td>
-																	<td>Thornton</td>
-																	<td class="small">2022-11-08 13:58:44</td>
-																</tr>
-																<tr>
-																	<th scope="row">4</th>
-																	<td>제 인스타 아이디는 >>> </td>
-																	<td>l_ahee___do</td>
-																	<td class="small">2022-11-05 15:01:32</td>
-																</tr>
-																<tr>
-																	<th scope="row">5</th>
-																	<td>주놘시 멍청이래요ㅎㅎㅎㅎㅎ </td>
-																	<td>cutypapa</td>
-																	<td class="small">2022-09-13 07:40:27</td>
+																<tr th:each="list: ${list}">
+																	<td>
+																		<span th:text="${list.boardNo}"></span>
+																	</td>
+																	<td>
+																		<a th:href="@{'/getBoard/' + ${list.boardNo}}">
+																			<span th:text="${list.boardTitle}"></span>
+																		</a>
+																	</td>
+																	<td>
+																		<span th:text="${list.boardContent}"></span>
+																	</td>
+																	<td>
+																		<span th:text="${#temporals.format(list.insDate,'yyyy-MM-dd HH:mm')}"></span>
+																	</td>
 																</tr>
 															</tbody>
 														</table>

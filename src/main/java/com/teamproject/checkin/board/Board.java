@@ -1,22 +1,23 @@
 package com.teamproject.checkin.board;
 
-import com.teamproject.checkin.user.UserAccount;
-import lombok.Builder;
+import com.teamproject.checkin.commEntity.TimeEntity;
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 //@IdClass(BoarderPK.class)
-public class Board {
+public class Board extends TimeEntity {
 
 /*    @Id //@Pk
     private String corpCode;
 
     @Id
     private String partCode;*/
-
   //  @Id
     private String boardType;
 
@@ -26,7 +27,7 @@ public class Board {
 
     private String boardTitle;
     private String boardContent;
-    public Board() { }
+   // public Board() { }
 
     public Board(Long boardNo, String boardType, String boardTitle, String boardContent){
         this.boardNo = boardNo;
